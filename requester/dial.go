@@ -1,11 +1,11 @@
 package requester
 
 import (
+	"BaiduPCS-Go/baidupcs/expires"
+	"BaiduPCS-Go/baidupcs/expires/cachemap"
 	"context"
 	"crypto/tls"
 	"errors"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/expires"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/expires/cachemap"
 	mathrand "math/rand"
 	"net"
 	"net/http"

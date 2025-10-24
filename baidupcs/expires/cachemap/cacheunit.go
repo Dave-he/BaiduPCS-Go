@@ -1,7 +1,7 @@
 package cachemap
 
 import (
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/expires"
+	"BaiduPCS-Go/baidupcs/expires"
 	"sync"
 )
 

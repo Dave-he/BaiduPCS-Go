@@ -1,16 +1,17 @@
 package pcsdownload
 
 import (
+	"BaiduPCS-Go/baidupcs"
+	"BaiduPCS-Go/internal/pcsconfig"
+	"BaiduPCS-Go/pcsutil/checksum"
 	"encoding/hex"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
-	"github.com/qjfoidnh/BaiduPCS-Go/internal/pcsconfig"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/checksum"
-	"golang.org/x/net/publicsuffix"
 	"net/http"
 	"net/http/cookiejar"
 	"net/url"
 	"os"
+
+	"golang.org/x/net/publicsuffix"
 )
 
 // CheckFileValid 检测文件有效性

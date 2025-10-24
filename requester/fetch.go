@@ -1,9 +1,9 @@
 package requester
 
 import (
+	"BaiduPCS-Go/requester/rio"
 	"bytes"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/rio"
 	"io"
 	"io/ioutil"
 	"net/http"

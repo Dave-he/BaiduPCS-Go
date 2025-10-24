@@ -10,12 +10,14 @@ import (
 	"strings"
 	"unsafe"
 
-	jsoniter "github.com/json-iterator/go"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/netdisksign"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/multipartreader"
+	"BaiduPCS-Go/baidupcs/netdisksign"
+	"BaiduPCS-Go/baidupcs/pcserror"
+	"BaiduPCS-Go/pcsutil/converter"
+	"BaiduPCS-Go/requester/multipartreader"
+
 	"github.com/qjfoidnh/baidu-tools/tieba"
+
+	jsoniter "github.com/json-iterator/go"
 )
 
 type (

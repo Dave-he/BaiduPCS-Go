@@ -1,8 +1,8 @@
 package cachepool_test
 
 import (
+	"BaiduPCS-Go/pcsutil/cachepool"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/cachepool"
 	"runtime"
 	"testing"
 )

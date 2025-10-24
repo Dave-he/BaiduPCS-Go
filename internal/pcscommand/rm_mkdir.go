@@ -1,8 +1,8 @@
 package pcscommand
 
 import (
+	"BaiduPCS-Go/pcstable"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcstable"
 	"os"
 	"strconv"
 )

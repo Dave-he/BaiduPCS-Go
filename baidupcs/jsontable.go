@@ -1,13 +1,14 @@
 package baidupcs
 
 import (
+	"BaiduPCS-Go/pcstable"
+	"BaiduPCS-Go/pcsutil"
 	"errors"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcstable"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil"
-	"github.com/json-iterator/go"
 	"path"
 	"strconv"
 	"strings"
+
+	jsoniter "github.com/json-iterator/go"
 )
 
 type (

@@ -1,8 +1,8 @@
 package escaper_test
 
 import (
+	"BaiduPCS-Go/pcsutil/escaper"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/escaper"
 	"testing"
 )
 

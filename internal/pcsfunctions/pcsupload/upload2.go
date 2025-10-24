@@ -2,7 +2,7 @@ package pcsupload
 
 /*
 import (
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
+	"BaiduPCS-Go/baidupcs"
 )
 
 type (

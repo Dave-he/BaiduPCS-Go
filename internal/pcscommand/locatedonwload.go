@@ -1,10 +1,10 @@
 package pcscommand
 
 import (
+	"BaiduPCS-Go/internal/pcsconfig"
+	"BaiduPCS-Go/pcstable"
+	"BaiduPCS-Go/pcsutil/converter"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/internal/pcsconfig"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcstable"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
 	"os"
 	"strconv"
 )

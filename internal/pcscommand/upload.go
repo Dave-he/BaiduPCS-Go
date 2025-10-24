@@ -1,15 +1,15 @@
 package pcscommand
 
 import (
+	"BaiduPCS-Go/baidupcs"
+	"BaiduPCS-Go/internal/pcsconfig"
+	"BaiduPCS-Go/internal/pcsfunctions/pcsupload"
+	"BaiduPCS-Go/pcstable"
+	"BaiduPCS-Go/pcsutil"
+	"BaiduPCS-Go/pcsutil/checksum"
+	"BaiduPCS-Go/pcsutil/converter"
+	"BaiduPCS-Go/pcsutil/taskframework"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
-	"github.com/qjfoidnh/BaiduPCS-Go/internal/pcsconfig"
-	"github.com/qjfoidnh/BaiduPCS-Go/internal/pcsfunctions/pcsupload"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcstable"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/checksum"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/taskframework"
 	"os"
 	"path"
 	"path/filepath"

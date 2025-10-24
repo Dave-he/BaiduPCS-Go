@@ -1,7 +1,7 @@
 package pcsfunctions
 
 import (
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/expires"
+	"BaiduPCS-Go/baidupcs/expires"
 	"sync/atomic"
 	"time"
 )

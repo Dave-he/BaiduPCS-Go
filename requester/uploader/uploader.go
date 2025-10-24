@@ -2,11 +2,11 @@
 package uploader
 
 import (
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsverbose"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/rio"
+	"BaiduPCS-Go/pcsutil"
+	"BaiduPCS-Go/pcsutil/converter"
+	"BaiduPCS-Go/pcsverbose"
+	"BaiduPCS-Go/requester"
+	"BaiduPCS-Go/requester/rio"
 	"net/http"
 	"time"
 )
@@ -68,12 +68,12 @@ func (u *Uploader) SetClient(c *requester.HTTPClient) {
 	u.client = c
 }
 
-//SetContentType 设置Content-Type
+// SetContentType 设置Content-Type
 func (u *Uploader) SetContentType(contentType string) {
 	u.contentType = contentType
 }
 
-//SetCheckFunc 设置上传完成的检测函数
+// SetCheckFunc 设置上传完成的检测函数
 func (u *Uploader) SetCheckFunc(checkFunc CheckFunc) {
 	u.checkFunc = checkFunc
 }

@@ -1,8 +1,8 @@
 package speeds_test
 
 import (
+	"BaiduPCS-Go/requester/rio/speeds"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/rio/speeds"
 	"testing"
 	"time"
 )

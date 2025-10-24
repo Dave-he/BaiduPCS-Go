@@ -2,17 +2,18 @@
 package pcsconfig
 
 import (
-	"github.com/json-iterator/go"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/jsonhelper"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsverbose"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester"
+	"BaiduPCS-Go/baidupcs"
+	"BaiduPCS-Go/pcsutil"
+	"BaiduPCS-Go/pcsutil/jsonhelper"
+	"BaiduPCS-Go/pcsverbose"
+	"BaiduPCS-Go/requester"
 	"os"
 	"path/filepath"
 	"runtime"
 	"strings"
 	"sync"
+
+	jsoniter "github.com/json-iterator/go"
 )
 
 const (

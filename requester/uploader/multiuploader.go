@@ -1,13 +1,13 @@
 package uploader
 
 import (
+	"BaiduPCS-Go/baidupcs/pcserror"
+	"BaiduPCS-Go/pcsutil"
+	"BaiduPCS-Go/pcsutil/converter"
+	"BaiduPCS-Go/requester"
+	"BaiduPCS-Go/requester/rio"
+	"BaiduPCS-Go/requester/rio/speeds"
 	"context"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/rio"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/rio/speeds"
 	"sync"
 	"time"
 )

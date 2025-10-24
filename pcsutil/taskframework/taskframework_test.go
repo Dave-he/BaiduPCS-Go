@@ -1,8 +1,8 @@
 package taskframework_test
 
 import (
+	"BaiduPCS-Go/pcsutil/taskframework"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/taskframework"
 	"testing"
 	"time"
 )

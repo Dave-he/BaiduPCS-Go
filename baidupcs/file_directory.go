@@ -1,17 +1,18 @@
 package baidupcs
 
 import (
+	"BaiduPCS-Go/baidupcs/pcserror"
+	"BaiduPCS-Go/pcstable"
+	"BaiduPCS-Go/pcsutil/converter"
+	"BaiduPCS-Go/pcsutil/pcstime"
 	"errors"
 	"fmt"
-	"github.com/olekukonko/tablewriter"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcstable"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/pcstime"
 	"path/filepath"
 	"strconv"
 	"strings"
 	"unsafe"
+
+	"github.com/olekukonko/tablewriter"
 )
 
 type (

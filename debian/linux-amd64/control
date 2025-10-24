@@ -1,6 +1,6 @@
 Package: BaiduPCS-Go
 Version: 3.7
-Homepage: https://github.com/qjfoidnh/BaiduPCS-Go
+Homepage: https://BaiduPCS-Go
 Section: utils
 Priority: optional
 Architecture: amd64

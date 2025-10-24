@@ -1,8 +1,8 @@
 package baidupcs
 
 import (
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/expires"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/pcserror"
+	"BaiduPCS-Go/baidupcs/expires"
+	"BaiduPCS-Go/baidupcs/pcserror"
 	"time"
 )
 

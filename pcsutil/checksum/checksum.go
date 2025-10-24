@@ -2,11 +2,11 @@
 package checksum
 
 import (
+	"BaiduPCS-Go/pcsutil/cachepool"
+	"BaiduPCS-Go/pcsutil/converter"
 	"crypto/md5"
 	"encoding/hex"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
 	"hash/crc32"
 	"io"
 	"os"

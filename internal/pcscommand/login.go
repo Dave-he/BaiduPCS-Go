@@ -1,15 +1,16 @@
 package pcscommand
 
 import (
+	"BaiduPCS-Go/internal/pcsfunctions/pcscaptcha"
+	"BaiduPCS-Go/pcsliner"
+	"BaiduPCS-Go/requester"
 	"bytes"
 	"fmt"
-	baidulogin "github.com/qjfoidnh/Baidu-Login"
-	"github.com/qjfoidnh/BaiduPCS-Go/internal/pcsfunctions/pcscaptcha"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsliner"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester"
 	"image/png"
 	"io/ioutil"
 	"strings"
+
+	baidulogin "github.com/qjfoidnh/Baidu-Login"
 )
 
 // handleVerifyImg 处理验证码, 下载到本地
@@ -126,7 +127,7 @@ for_1:
 				} else {
 					vcode_raw = ""
 					vcodestr = ""
-						goto BEGIN
+					goto BEGIN
 				}
 				// 登录成功
 				return nlj.Data.BDUSS, nlj.Data.PToken, nlj.Data.SToken, nlj.Data.CookieString, nil

@@ -1,11 +1,12 @@
 package taskframework
 
 import (
-	"github.com/GeertJohan/go.incremental"
-	"github.com/oleiade/lane"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/waitgroup"
+	"BaiduPCS-Go/pcsutil/waitgroup"
 	"strconv"
 	"time"
+
+	incremental "github.com/GeertJohan/go.incremental"
+	"github.com/oleiade/lane"
 )
 
 type (
@@ -44,7 +45,7 @@ func (te *TaskExecutor) SetParallel(parallel int) {
 	te.parallel = parallel
 }
 
-//Append 将任务加到任务队列末尾
+// Append 将任务加到任务队列末尾
 func (te *TaskExecutor) Append(unit TaskUnit, maxRetry int) *TaskInfo {
 	te.lazyInit()
 	taskInfo := &TaskInfo{
@@ -59,12 +60,12 @@ func (te *TaskExecutor) Append(unit TaskUnit, maxRetry int) *TaskInfo {
 	return taskInfo
 }
 
-//AppendNoRetry 将任务加到任务队列末尾, 不重试
+// AppendNoRetry 将任务加到任务队列末尾, 不重试
 func (te *TaskExecutor) AppendNoRetry(unit TaskUnit) {
 	te.Append(unit, 0)
 }
 
-//Count 返回任务数量
+// Count 返回任务数量
 func (te *TaskExecutor) Count() int {
 	if te.deque == nil {
 		return 0
@@ -72,7 +73,7 @@ func (te *TaskExecutor) Count() int {
 	return te.deque.Size()
 }
 
-//Execute 执行任务
+// Execute 执行任务
 func (te *TaskExecutor) Execute() {
 	te.lazyInit()
 
@@ -146,21 +147,21 @@ func (te *TaskExecutor) Execute() {
 	}
 }
 
-//FailedDeque 获取失败队列
+// FailedDeque 获取失败队列
 func (te *TaskExecutor) FailedDeque() *lane.Deque {
 	return te.failedDeque
 }
 
-//Stop 停止执行
+// Stop 停止执行
 func (te *TaskExecutor) Stop() {
 
 }
 
-//Pause 暂停执行
+// Pause 暂停执行
 func (te *TaskExecutor) Pause() {
 
 }
 
-//Resume 恢复执行
+// Resume 恢复执行
 func (te *TaskExecutor) Resume() {
 }

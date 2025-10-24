@@ -1,8 +1,8 @@
 package pcsdownload
 
 import (
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
-	"github.com/qjfoidnh/BaiduPCS-Go/internal/pcsconfig"
+	"BaiduPCS-Go/baidupcs"
+	"BaiduPCS-Go/internal/pcsconfig"
 	"net/url"
 )
 

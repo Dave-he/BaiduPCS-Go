@@ -1,14 +1,14 @@
 package downloader
 
 import (
+	"BaiduPCS-Go/pcsutil/cachepool"
+	"BaiduPCS-Go/pcsverbose"
+	"BaiduPCS-Go/requester"
+	"BaiduPCS-Go/requester/rio/speeds"
+	"BaiduPCS-Go/requester/transfer"
 	"context"
 	"errors"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsverbose"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/rio/speeds"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/transfer"
 	"io"
 	"net/http"
 	"sync"

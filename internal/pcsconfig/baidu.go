@@ -8,10 +8,11 @@ import (
 	"strconv"
 	"strings"
 
+	"BaiduPCS-Go/baidupcs"
+	"BaiduPCS-Go/pcstable"
+	"BaiduPCS-Go/pcsutil/converter"
+
 	"github.com/olekukonko/tablewriter"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcstable"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
 	"github.com/qjfoidnh/baidu-tools/tieba"
 )
 
@@ -22,7 +23,7 @@ var (
 	ErrBaiduUserNotFound = errors.New("baidu user not found")
 )
 
-//BaiduBase Baidu基
+// BaiduBase Baidu基
 type BaiduBase struct {
 	UID  uint64 `json:"uid"`  // 百度ID对应的uid
 	Name string `json:"name"` // 真实ID
@@ -41,7 +42,9 @@ type Baidu struct {
 	SBOXTKN string `json:"sboxtkn"`
 	COOKIES string `json:"cookies"`
 
-	AccessToken string `json:"accesstoken"`
+	AccessToken    string `json:"accesstoken"`
+	RefreshToken   string `json:"refreshtoken"`
+	TokenExpiresAt int64  `json:"token_expires_at"`
 
 	Workdir string `json:"workdir"` // 工作目录
 }

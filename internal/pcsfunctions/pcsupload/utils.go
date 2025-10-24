@@ -1,9 +1,9 @@
 package pcsupload
 
 import (
+	"BaiduPCS-Go/baidupcs"
 	"crypto/md5"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
 	"io"
 	"strconv"
 )

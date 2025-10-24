@@ -1,8 +1,8 @@
 package panhome
 
 import (
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/expires"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester"
+	"BaiduPCS-Go/baidupcs/expires"
+	"BaiduPCS-Go/requester"
 	"net/url"
 )
 

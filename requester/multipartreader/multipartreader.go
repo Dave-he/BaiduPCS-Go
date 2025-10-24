@@ -3,9 +3,9 @@
 package multipartreader
 
 import (
+	"BaiduPCS-Go/requester/rio"
 	"errors"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/rio"
 	"io"
 	"mime/multipart"
 	"strings"
@@ -83,7 +83,7 @@ func (mr *MultipartReader) AddFormFile(fieldname, filename string, readerlen64 r
 	mr.part64s = append(mr.part64s, mpart64)
 }
 
-//CloseMultipart 关闭multipartreader
+// CloseMultipart 关闭multipartreader
 func (mr *MultipartReader) CloseMultipart() error {
 	mr.mu.Lock()
 	defer mr.mu.Unlock()
@@ -118,7 +118,7 @@ func (mr *MultipartReader) CloseMultipart() error {
 	return nil
 }
 
-//ContentType 返回Content-Type
+// ContentType 返回Content-Type
 func (mr *MultipartReader) ContentType() string {
 	return mr.contentType
 }

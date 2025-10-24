@@ -1,8 +1,8 @@
 package checksum
 
 import (
+	"BaiduPCS-Go/baidupcs"
 	"bytes"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
 	"path/filepath"
 )
 

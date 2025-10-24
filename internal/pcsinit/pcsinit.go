@@ -3,11 +3,12 @@ package pcsinit
 
 import (
 	"fmt"
-	"github.com/urfave/cli"
 	_ "unsafe" // for go:linkname
+
+	"github.com/urfave/cli"
 )
 
-//go:linkname helpCommand1 github.com/qjfoidnh/BaiduPCS-Go/vendor/github.com/urfave/cli.helpCommand
+//go:linkname helpCommand1 BaiduPCS-Go/vendor/github.com/urfave/cli.helpCommand
 //go:linkname helpCommand2 github.com/urfave/cli.helpCommand
 var (
 	helpCommand1 cli.Command

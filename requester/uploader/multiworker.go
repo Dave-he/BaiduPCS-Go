@@ -1,14 +1,15 @@
 package uploader
 
 import (
+	"BaiduPCS-Go/pcsutil/waitgroup"
 	"context"
 	"errors"
 	"fmt"
-	"github.com/oleiade/lane"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/waitgroup"
 	"os"
 	"slices"
 	"sync"
+
+	"github.com/oleiade/lane"
 )
 
 type (

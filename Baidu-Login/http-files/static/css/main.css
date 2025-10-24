@@ -1,0 +1,25 @@
+@charset "utf-8";
+.baidu-header {
+    margin: 0 2em;
+}
+
+#footer {
+    color: gray;
+    float: right;
+    margin: 1em;
+    margin-right: 10%;
+}
+
+#login-verifyWrapper{
+    display: none;
+}
+
+#login-verifyWrapper > p{
+    display: table;
+}
+
+#login-verifyWrapper > p > span{
+    padding-left: 20px;
+    width: 120px;
+    height: 40px;
+}

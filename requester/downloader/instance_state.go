@@ -1,14 +1,15 @@
 package downloader
 
 import (
+	"BaiduPCS-Go/pcsutil/cachepool"
+	"BaiduPCS-Go/pcsverbose"
+	"BaiduPCS-Go/requester/transfer"
 	"errors"
-	"github.com/golang/protobuf/proto"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsverbose"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/transfer"
-	"github.com/json-iterator/go"
 	"os"
 	"sync"
+
+	"github.com/golang/protobuf/proto"
+	jsoniter "github.com/json-iterator/go"
 )
 
 type (
@@ -31,7 +32,7 @@ const (
 	InstanceStateStorageFormatProto3
 )
 
-//NewInstanceState 初始化InstanceState
+// NewInstanceState 初始化InstanceState
 func NewInstanceState(saveFile *os.File, format InstanceStateStorageFormat) *InstanceState {
 	return &InstanceState{
 		saveFile: saveFile,
@@ -65,7 +66,7 @@ func (is *InstanceState) getSaveFileContents() []byte {
 	return buf[:n]
 }
 
-//Get 获取断点续传信息
+// Get 获取断点续传信息
 func (is *InstanceState) Get() (eii *transfer.DownloadInstanceInfo) {
 	if !is.checkSaveFile() {
 		return nil
@@ -97,7 +98,7 @@ func (is *InstanceState) Get() (eii *transfer.DownloadInstanceInfo) {
 	return
 }
 
-//Put 提交断点续传信息
+// Put 提交断点续传信息
 func (is *InstanceState) Put(eii *transfer.DownloadInstanceInfo) {
 	if !is.checkSaveFile() {
 		return
@@ -135,7 +136,7 @@ func (is *InstanceState) Put(eii *transfer.DownloadInstanceInfo) {
 	}
 }
 
-//Close 关闭
+// Close 关闭
 func (is *InstanceState) Close() error {
 	if !is.checkSaveFile() {
 		return nil

@@ -4,8 +4,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester"
+	"BaiduPCS-Go/pcsutil/converter"
+	"BaiduPCS-Go/requester"
 )
 
 const (

@@ -1,8 +1,8 @@
 package pcscommand
 
 import (
+	"BaiduPCS-Go/baidupcs"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
 	"strings"
 )
 

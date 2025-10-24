@@ -1,8 +1,8 @@
 package pcsutil
 
 import (
-	"fmt"
 	"github.com/qjfoidnh/Baidu-Login/bdcrypto"
+	"fmt"
 	"io"
 	"os"
 	"strings"

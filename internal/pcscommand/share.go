@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcstable"
+	"BaiduPCS-Go/baidupcs"
+	"BaiduPCS-Go/pcstable"
 )
 
 // RunShareSet 执行分享

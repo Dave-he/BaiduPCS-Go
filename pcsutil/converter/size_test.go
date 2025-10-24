@@ -1,8 +1,8 @@
 package converter_test
 
 import (
+	"BaiduPCS-Go/pcsutil/converter"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
 	"testing"
 )
 

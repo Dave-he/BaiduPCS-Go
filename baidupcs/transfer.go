@@ -1,10 +1,9 @@
 package baidupcs
 
 import (
+	"BaiduPCS-Go/pcsutil"
+	"BaiduPCS-Go/requester"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester"
-	"github.com/tidwall/gjson"
 	"io/ioutil"
 	"net/http"
 	"net/url"
@@ -13,6 +12,8 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+
+	"github.com/tidwall/gjson"
 )
 
 type (

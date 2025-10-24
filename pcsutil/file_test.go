@@ -1,8 +1,8 @@
 package pcsutil_test
 
 import (
+	"BaiduPCS-Go/pcsutil"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil"
 	"testing"
 )
 

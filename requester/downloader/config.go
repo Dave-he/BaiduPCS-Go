@@ -1,12 +1,12 @@
 package downloader
 
 import (
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/transfer"
+	"BaiduPCS-Go/requester/transfer"
 )
 
 const (
 	//CacheSize 默认的下载缓存
-	CacheSize = 8192
+	CacheSize    = 8192
 	ParallelSize = 5
 )
 
@@ -15,7 +15,7 @@ var (
 	MinParallelSize int64 = 256 * 1024 // 256kb
 )
 
-//Config 下载配置
+// Config 下载配置
 type Config struct {
 	Mode                       transfer.RangeGenMode      // 下载Range分配模式
 	MaxParallel                int                        // 最大下载并发量
@@ -28,7 +28,7 @@ type Config struct {
 	TryHTTP                    bool                       // 是否尝试使用 http 连接
 }
 
-//NewConfig 返回默认配置
+// NewConfig 返回默认配置
 func NewConfig() *Config {
 	return &Config{
 		MaxParallel: ParallelSize,
@@ -37,7 +37,7 @@ func NewConfig() *Config {
 	}
 }
 
-//Fix 修复配置信息, 使其合法
+// Fix 修复配置信息, 使其合法
 func (cfg *Config) Fix() {
 	fixCacheSize(&cfg.CacheSize)
 	if cfg.MaxParallel < 1 {
@@ -45,7 +45,7 @@ func (cfg *Config) Fix() {
 	}
 }
 
-//Copy 拷贝新的配置
+// Copy 拷贝新的配置
 func (cfg *Config) Copy() *Config {
 	newCfg := *cfg
 	return &newCfg

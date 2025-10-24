@@ -4,15 +4,15 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/pcserror"
+	"BaiduPCS-Go/baidupcs/pcserror"
 )
 
 type (
 	// ShareOption 分享可选项
 	ShareOption struct {
-		Password string // 密码
-		Period   int    // 有效期
-		IsCombined bool // 是否将密码输出到分享链接
+		Password   string // 密码
+		Period     int    // 有效期
+		IsCombined bool   // 是否将密码输出到分享链接
 	}
 
 	// Shared 分享信息
@@ -152,7 +152,7 @@ func (pcs *BaiduPCS) ShareList(page int) (records ShareRecordInfoList, pcsError 
 	return jsonData.List, nil
 }
 
-//ShareSURLInfo 获取分享的详细信息, 包含密码
+// ShareSURLInfo 获取分享的详细信息, 包含密码
 func (pcs *BaiduPCS) ShareSURLInfo(shareID int64) (info *ShareSURLInfo, pcsError pcserror.Error) {
 	dataReadCloser, pcsError := pcs.PrepareShareSURLInfo(shareID)
 	if pcsError != nil {

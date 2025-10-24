@@ -1,12 +1,12 @@
 package baidupcs
 
 import (
+	"BaiduPCS-Go/baidupcs/pcserror"
+	"BaiduPCS-Go/pcsutil"
+	"BaiduPCS-Go/pcsutil/converter"
 	"crypto/md5"
 	"errors"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
 	"io"
 	"math/rand"
 	"path"

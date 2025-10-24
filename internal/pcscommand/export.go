@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/pcstime"
+	"BaiduPCS-Go/baidupcs"
+	"BaiduPCS-Go/baidupcs/pcserror"
+	"BaiduPCS-Go/pcsutil/converter"
+	"BaiduPCS-Go/pcsutil/pcstime"
 )
 
 type (

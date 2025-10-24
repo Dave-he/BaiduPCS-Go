@@ -1,9 +1,9 @@
 package baidupcs
 
 import (
+	"BaiduPCS-Go/baidupcs/pcserror"
+	"BaiduPCS-Go/pcsutil/converter"
 	"errors"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
 	"net/http"
 	"net/url"
 )

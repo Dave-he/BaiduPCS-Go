@@ -1,10 +1,10 @@
 package uploader
 
 import (
+	"BaiduPCS-Go/requester/rio/speeds"
+	"BaiduPCS-Go/requester/transfer"
 	"bufio"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/rio/speeds"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/transfer"
 	"io"
 	"os"
 	"sync"

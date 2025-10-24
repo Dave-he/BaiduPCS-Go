@@ -1,14 +1,15 @@
 package pcscommand
 
 import (
+	"BaiduPCS-Go/baidupcs"
+	"BaiduPCS-Go/pcstable"
+	"BaiduPCS-Go/pcsutil/converter"
+	"BaiduPCS-Go/pcsutil/pcstime"
 	"fmt"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcstable"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/pcstime"
-	"github.com/olekukonko/tablewriter"
 	"os"
 	"strconv"
+
+	"github.com/olekukonko/tablewriter"
 )
 
 // RunRecycleList 执行列出回收站文件列表

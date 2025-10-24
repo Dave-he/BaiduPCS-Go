@@ -1,14 +1,14 @@
 package baidupcs
 
 import (
+	"BaiduPCS-Go/baidupcs/pcserror"
+	"BaiduPCS-Go/pcsutil/cachepool"
+	"BaiduPCS-Go/pcsutil/converter"
+	"BaiduPCS-Go/pcsutil/escaper"
+	"BaiduPCS-Go/requester/downloader"
 	"crypto/md5"
 	"encoding/hex"
 	"errors"
-	"github.com/qjfoidnh/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/converter"
-	"github.com/qjfoidnh/BaiduPCS-Go/pcsutil/escaper"
-	"github.com/qjfoidnh/BaiduPCS-Go/requester/downloader"
 	"io"
 	"mime"
 	"net/http"
